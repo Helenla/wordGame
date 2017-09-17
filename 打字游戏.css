@@ -1,0 +1,43 @@
+#con{
+	/* border:1px solid black; */
+	width:800px;
+	height:600px;
+	position:absolute;
+	left:0;right:0;top:0;bottom:0;
+	margin:auto;
+	box-shadow:0 0 30px 2px #ff4949;
+}
+span{
+	/* border:1px solid black; */
+	height:50px;width:50px;
+	display:block;
+	font-size:30px;
+	text-align:center;
+	line-height:50px;
+	border-radius:25px;
+	position:absolute;
+	top:0px;color:white;
+	background: #F55D5D;
+	/* box-sizing:border-box; */
+}
+span.dh{
+	/*动画名字*/
+	animation-name:dh;
+	/*动画持续时间*/
+	animation-duration:0.5s;
+	/*动画结束后保持什么状态*/
+	animation-fill-mode:forwards;
+	/*动画执行时的快慢速度*/
+	animation-timing-function:linear;
+}
+/*创建动画*/
+@keyframes dh{
+	from{
+		opacity:1;
+		transform:scale(1) roate(0deg);
+	}
+	to{
+		opacity:0;
+		transform:scale(2) rotate(360deg);
+	}
+}
